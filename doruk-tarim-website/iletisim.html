@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Çivril Doruk Tarım - İletişim Bilgileri, Adres ve İletişim Formu">
+    <title>İletişim - Çivril Doruk Tarım</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <div class="logo-icon">🌻</div>
+                    <div>
+                        <h1>Çivril Doruk Tarım</h1>
+                        <p>2005'ten Beri Kalite ve Güven</p>
+                    </div>
+                </div>
+                <div class="header-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+90 (258) 712 34 56</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@doruktarim.com</span>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="kurumsal.html">Kurumsal</a></li>
+                    <li><a href="urunler.html">Ürünler</a></li>
+                    <li><a href="hizmetler.html">Hizmetler</a></li>
+                    <li><a href="iletisim.html" class="active">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bizimle İletişime Geçin</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li>/</li>
+                <li>İletişim</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Bize Ulaşın</h2>
+                <p>Sorularınız ve talepleriniz için bizimle iletişime geçebilirsiniz</p>
+            </div>
+
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>İletişim Bilgileri</h3>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adres</h4>
+                            <p>Organize Sanayi Bölgesi<br>20800 Çivril/Denizli<br>Türkiye</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+90 (258) 712 34 56<br>+90 (258) 712 34 57</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            <h4>Mobil</h4>
+                            <p>+90 (533) 123 45 67</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-posta</h4>
+                            <p>info@doruktarim.com<br>satis@doruktarim.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Çalışma Saatleri</h4>
+                            <p>Pazartesi - Cuma: 08:00 - 18:00<br>Cumartesi: 09:00 - 14:00<br>Pazar: Kapalı</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-share-alt"></i>
+                        <div>
+                            <h4>Sosyal Medya</h4>
+                            <div class="social-links" style="margin-top: 10px;">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3 style="color: var(--primary-green); margin-bottom: 25px; font-size: 1.8rem;">Mesaj Gönderin</h3>
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required placeholder="Adınız ve soyadınız">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required placeholder="E-posta adresiniz">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Telefon numaranız">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Konu *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Mesajınızın konusu">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" required placeholder="Mesajınızı buraya yazın..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Mesaj Gönder
+                        </button>
+                    </form>
+                    <div id="formMessage" style="margin-top: 20px; padding: 15px; border-radius: 5px; display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="background-color: var(--bg-light); padding: 0;">
+        <div style="width: 100%; height: 450px; background-color: #e0e0e0; position: relative;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.823456789!2d29.7234567!3d38.3012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDE4JzA0LjQiTiAyOcKwNDMnMjQuNCJF!5e0!3m2!1str!2str!4v1234567890"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Bize Nasıl Ulaşabilirsiniz?</h2>
+                <p>Size en uygun iletişim yöntemini seçin</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Telefon ile Arayın</h3>
+                    <p style="margin-bottom: 20px;">
+                        Çalışma saatleri içerisinde bizi arayarak anında destek alabilirsiniz.
+                    </p>
+                    <a href="tel:+902587123456" class="btn">Hemen Ara</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h3>E-posta Gönderin</h3>
+                    <p style="margin-bottom: 20px;">
+                        Detaylı sorularınız ve talepleriniz için bize e-posta gönderebilirsiniz.
+                    </p>
+                    <a href="mailto:info@doruktarim.com" class="btn">E-posta Gönder</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Tesisimizi Ziyaret Edin</h3>
+                    <p style="margin-bottom: 20px;">
+                        Tesislerimizi görmek ve ürünlerimizi yakından incelemek için ziyaret edebilirsiniz.
+                    </p>
+                    <a href="https://maps.google.com" target="_blank" class="btn">Yol Tarifi Al</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments -->
+    <section style="background-color: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Departmanlarımız</h2>
+                <p>Konunuza göre ilgili departmanımızla iletişime geçin</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Satış Departmanı</h3>
+                    <p style="color: var(--light-text); margin-bottom: 15px;">
+                        Ürün satışı, fiyat teklifleri ve sipariş bilgileri için
+                    </p>
+                    <p style="color: var(--secondary-green); font-weight: 600;">
+                        <i class="fas fa-envelope"></i> satis@doruktarim.com<br>
+                        <i class="fas fa-phone"></i> +90 (258) 712 34 56
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Müşteri İlişkileri</h3>
+                    <p style="color: var(--light-text); margin-bottom: 15px;">
+                        Genel sorular, şikayetler ve önerileriniz için
+                    </p>
+                    <p style="color: var(--secondary-green); font-weight: 600;">
+                        <i class="fas fa-envelope"></i> info@doruktarim.com<br>
+                        <i class="fas fa-phone"></i> +90 (258) 712 34 57
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Lojistik ve Depo</h3>
+                    <p style="color: var(--light-text); margin-bottom: 15px;">
+                        Sevkiyat, depolama ve lojistik hizmetler için
+                    </p>
+                    <p style="color: var(--secondary-green); font-weight: 600;">
+                        <i class="fas fa-envelope"></i> lojistik@doruktarim.com<br>
+                        <i class="fas fa-phone"></i> +90 (533) 123 45 67
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Sıkça Sorulan Sorular</h2>
+                <p>Merak edilenler</p>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="vm-card" style="margin-bottom: 20px;">
+                    <h3>
+                        <i class="fas fa-question-circle"></i>
+                        Minimum sipariş miktarı nedir?
+                    </h3>
+                    <p>
+                        Minimum sipariş miktarlarımız ürün tipine göre değişiklik göstermektedir. Detaylı bilgi
+                        için satış departmanımız ile iletişime geçebilirsiniz.
+                    </p>
+                </div>
+                <div class="vm-card" style="margin-bottom: 20px;">
+                    <h3>
+                        <i class="fas fa-question-circle"></i>
+                        Teslimat süreniz ne kadardır?
+                    </h3>
+                    <p>
+                        Stokta bulunan ürünler için teslimat süresi 3-5 iş günüdür. Özel siparişler için
+                        süre sipariş detayına göre belirlenir.
+                    </p>
+                </div>
+                <div class="vm-card" style="margin-bottom: 20px;">
+                    <h3>
+                        <i class="fas fa-question-circle"></i>
+                        İhracat yapıyor musunuz?
+                    </h3>
+                    <p>
+                        Evet, 15'ten fazla ülkeye ihracat yapmaktayız. Uluslararası siparişleriniz için
+                        lütfen bizimle iletişime geçin.
+                    </p>
+                </div>
+                <div class="vm-card">
+                    <h3>
+                        <i class="fas fa-question-circle"></i>
+                        Numune gönderimi yapıyor musunuz?
+                    </h3>
+                    <p>
+                        Evet, potansiyel müşterilerimize ücretsiz numune gönderimi yapmaktayız. Numune talebi
+                        için iletişim formunu doldurabilir veya bizi arayabilirsiniz.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%); color: white; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: white;">Hemen İletişime Geçin</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Sorularınız ve talepleriniz için 7/24 size yardımcı olmaya hazırız.
+            </p>
+            <a href="tel:+902587123456" class="btn">
+                <i class="fas fa-phone"></i> Hemen Ara
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌻 Çivril Doruk Tarım</h3>
+                    <p>2005'ten beri ayçekirdeği ve kabak çekirdeği sektöründe kalite ve güvenin adresi.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Hızlı Bağlantılar</h3>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="kurumsal.html">Kurumsal</a></li>
+                        <li><a href="urunler.html">Ürünler</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ürünlerimiz</h3>
+                    <ul>
+                        <li><a href="urunler.html#siyah">Siyah Ayçekirdeği</a></li>
+                        <li><a href="urunler.html#beyaz">Beyaz Ayçekirdeği</a></li>
+                        <li><a href="urunler.html#kabak">Kabak Çekirdeği</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>İletişim</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Organize Sanayi Bölgesi, 20800 Çivril/Denizli</li>
+                        <li><i class="fas fa-phone"></i> +90 (258) 712 34 56</li>
+                        <li><i class="fas fa-envelope"></i> info@doruktarim.com</li>
+                        <li><i class="fas fa-clock"></i> Pzt-Cuma: 08:00 - 18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Çivril Doruk Tarım. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
