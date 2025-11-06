@@ -529,8 +529,12 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header .container {
+    header {
         position: relative;
+    }
+
+    header .container {
+        position: static;
     }
 
     .header-content {
@@ -549,6 +553,7 @@ footer {
         position: absolute;
         right: 20px;
         top: 15px;
+        z-index: 1001;
     }
 
     nav {
