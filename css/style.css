@@ -149,14 +149,14 @@ nav ul li a.active {
 
 .btn-secondary {
     background-color: transparent;
-    border: 2px solid var(--white);
-    color: var(--white);
+    border: 2px solid var(--secondary-green);
+    color: var(--secondary-green);
     margin-left: 15px;
 }
 
 .btn-secondary:hover {
-    background-color: var(--white);
-    color: var(--primary-green);
+    background-color: var(--secondary-green);
+    color: var(--white);
 }
 
 /* Sections */
