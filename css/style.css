@@ -277,6 +277,22 @@ section {
     align-items: center;
 }
 
+/* Product pages - vertical layout */
+#siyah .about-content,
+#beyaz .about-content,
+#kabak .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#siyah .about-image,
+#beyaz .about-image,
+#kabak .about-image {
+    order: -1;
+    height: 300px;
+}
+
 .about-text h3 {
     font-size: 2rem;
     color: var(--primary-green);
