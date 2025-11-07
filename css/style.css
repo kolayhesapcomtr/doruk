@@ -8,8 +8,8 @@
 }
 
 :root {
-    --primary-green: #2d5016;
-    --secondary-green: #4a7c28;
+    --primary-green: rgb(22, 101, 52);
+    --secondary-green: rgb(34, 139, 72);
     --light-green: #8bc34a;
     --accent-gold: #d4af37;
     --dark-text: #333333;
