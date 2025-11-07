@@ -302,7 +302,7 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 8rem;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,1);
 }
 
 /* Contact Form */
